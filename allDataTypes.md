@@ -528,19 +528,19 @@ Julius
 ```js
 let string = "Pluralcode February Cohort Javascript Classes";
 
-console.log(string.includes("Days")); // true
-console.log(string.includes("days")); // false - it is case sensitive!
-console.log(string.includes("Script")); // true
-console.log(string.includes("script")); // false
+console.log(string.includes("February")); // true
+console.log(string.includes("classes")); // false - it is case sensitive!
+console.log(string.includes("Script")); // false
+console.log(string.includes("script")); // true
 console.log(string.includes("java")); // false
 console.log(string.includes("Java")); // true
 
 let country = "Nigeria";
 
-console.log(country.includes("fin")); // false
-console.log(country.includes("Fin")); // true
-console.log(country.includes("land")); // true
-console.log(country.includes("Land")); // false
+console.log(country.includes("nig")); // false
+console.log(country.includes("ger")); // true
+console.log(country.includes("eria")); // true
+console.log(country.includes("Eria")); // false
 ```
 
 10. _replace()_: takes as a parameter the old substring and a new substring.
@@ -551,10 +551,10 @@ string.replace(oldsubstring, newsubstring);
 
 ```js
 let string = "Pluralcode February Cohort Javascript Classes";
-console.log(string.replace("JavaScript", "Python")); // 30 Days Of Python
+console.log(string.replace("JavaScript", "Python"));
 
 let country = "Nigeria";
-console.log(country.replace("Fin", "Noman")); // Nomanland
+console.log(country.replace("Nig", "eria"));
 ```
 
 11. _charAt()_: Takes index and it returns the value at that index
@@ -565,7 +565,7 @@ string.charAt(index);
 
 ```js
 let string = "Pluralcode February Cohort Javascript Classes";
-console.log(string.charAt(0)); // 3
+console.log(string.charAt(0));
 
 let lastIndex = string.length - 1;
 console.log(string.charAt(lastIndex)); // t
@@ -579,10 +579,10 @@ string.charCodeAt(index);
 
 ```js
 let string = "Pluralcode February Cohort Javascript Classes";
-console.log(string.charCodeAt(3)); // D ASCII number is 68
+console.log(string.charCodeAt(3));
 
 let lastIndex = string.length - 1;
-console.log(string.charCodeAt(lastIndex)); // t ASCII is 116
+console.log(string.charCodeAt(lastIndex));
 ```
 
 13. _indexOf()_: Takes a substring and if the substring exists in a string it returns the first position of the substring if does not exist it returns -1
@@ -594,13 +594,13 @@ string.indexOf(substring);
 ```js
 let string = "Pluralcode February Cohort Javascript Classes";
 
-console.log(string.indexOf("D")); // 3
-console.log(string.indexOf("Days")); // 3
+console.log(string.indexOf("P"));
+console.log(string.indexOf("Feb"));
 console.log(string.indexOf("days")); // -1
-console.log(string.indexOf("a")); // 4
-console.log(string.indexOf("JavaScript")); // 11
-console.log(string.indexOf("Script")); //15
-console.log(string.indexOf("script")); // -1
+console.log(string.indexOf("a"));
+console.log(string.indexOf("Javascript")); // 11
+console.log(string.indexOf("Script")); //-1
+console.log(string.indexOf("Script"));
 ```
 
 14. _lastIndexOf()_: Takes a substring and if the substring exists in a string it returns the last position of the substring if it does not exist it returns -1
@@ -629,8 +629,8 @@ string.concat(substring, substring, substring);
 let string = "30";
 console.log(string.concat("Days", "Of", "JavaScript")); // 30DaysOfJavaScript
 
-let country = "Fin";
-console.log(country.concat("land")); // Nigeria
+let country = "Nig";
+console.log(country.concat("eria")); // Nigeria
 ```
 
 16. _startsWith_: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
@@ -649,8 +649,8 @@ console.log(string.startsWith("world")); // false
 
 let country = "Nigeria";
 
-console.log(country.startsWith("Fin")); // true
-console.log(country.startsWith("fin")); // false
+console.log(country.startsWith("Nig")); // true
+console.log(country.startsWith("ger")); // false
 console.log(country.startsWith("land")); //  false
 ```
 
@@ -669,9 +669,9 @@ console.log(string.endsWith("in the world")); // true
 
 let country = "Nigeria";
 
-console.log(country.endsWith("land")); // true
-console.log(country.endsWith("fin")); // false
-console.log(country.endsWith("Fin")); //  false
+console.log(country.endsWith("eria")); // true
+console.log(country.endsWith("ger")); // false
+console.log(country.endsWith("eri")); //  false
 ```
 
 18. _search_: it takes a substring as an argument and it returns the index of the first match. The search value can be a string or a regular expression pattern.
@@ -852,9 +852,7 @@ let numInt = parseInt(num);
 console.log(numInt); // 9
 ```
 
-🌕 You are awesome. You have just completed day 2 challenges and you are two steps ahead on your way to greatness. Now do some exercises for your brain and for your muscle.
-
-## 💻 Day 2: Exercises
+## Exercises
 
 ### Exercise: Level 1
 
@@ -863,26 +861,25 @@ console.log(numInt); // 9
 3. Print the **length** of the string on the browser console using _console.log()_
 4. Change all the string characters to capital letters using **toUpperCase()** method
 5. Change all the string characters to lowercase letters using **toLowerCase()** method
-6. Cut (slice) out the first word of the string using **substr()** or **substring()** method
-7. Slice out the phrase _Days Of JavaScript_ from _Pluralcode February Cohort Javascript Classes_.
+6. Cut (slice) out the first word of the string using **substring()** method
+7. Slice out the phrase _Pluralcode_ from _Pluralcode February Cohort Javascript Classes_.
 8. Check if the string contains a word **Script** using **includes()** method
 9. Split the **string** into an **array** using **split()** method
 10. Split the string Pluralcode February Cohort Javascript Classes at the space using **split()** method
-11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' **split** the string at the comma and change it to an array.
-12. Change Pluralcode February Cohort Javascript Classes to 30 Days Of Python using **replace()** method.
-13. What is character at index 15 in 'Pluralcode February Cohort Javascript Classes' string? Use **charAt()** method.
-14. What is the character code of J in 'Pluralcode February Cohort Javascript Classes' string using **charCodeAt()**
-15. Use **indexOf** to determine the position of the first occurrence of **a** in Pluralcode February Cohort Javascript Classes
-16. Use **lastIndexOf** to determine the position of the last occurrence of **a** in Pluralcode February Cohort Javascript Classes.
-17. Use **indexOf** to find the position of the first occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
-18. Use **lastIndexOf** to find the position of the last occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
-19. Use **search** to find the position of the first occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
-20. Use **trim()** to remove any trailing whitespace at the beginning and the end of a string.E.g ' Pluralcode February Cohort Javascript Classes '.
-21. Use **startsWith()** method with the string _Pluralcode February Cohort Javascript Classes_ and make the result true
-22. Use **endsWith()** method with the string _Pluralcode February Cohort Javascript Classes_ and make the result true
-23. Use **match()** method to find all the **a**’s in Pluralcode February Cohort Javascript Classes
-24. Use **concat()** and merge '30 Days of' and 'JavaScript' to a single string, 'Pluralcode February Cohort Javascript Classes'
-25. Use **repeat()** method to print Pluralcode February Cohort Javascript Classes 2 times
+11. Change Pluralcode February Cohort Javascript Classes to 30 Days Of Python using **replace()** method.
+12. What is character at index 15 in 'Pluralcode February Cohort Javascript Classes' string? Use **charAt()** method.
+13. What is the character code of J in 'Pluralcode February Cohort Javascript Classes' string using **charCodeAt()**
+14. Use **indexOf** to determine the position of the first occurrence of **a** in Pluralcode February Cohort Javascript Classes
+15. Use **lastIndexOf** to determine the position of the last occurrence of **a** in Pluralcode February Cohort Javascript Classes.
+16. Use **indexOf** to find the position of the first occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
+17. Use **lastIndexOf** to find the position of the last occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
+18. Use **search** to find the position of the first occurrence of the word **because** in the following sentence:**'You cannot end a sentence with because because because is a conjunction'**
+19. Use **trim()** to remove any trailing whitespace at the beginning and the end of a string.E.g ' Pluralcode February Cohort Javascript Classes '.
+20. Use **startsWith()** method with the string _Pluralcode February Cohort Javascript Classes_ and make the result true
+21. Use **endsWith()** method with the string _Pluralcode February Cohort Javascript Classes_ and make the result true
+22. Use **match()** method to find all the **a**’s in Pluralcode February Cohort Javascript Classes
+23. Use **concat()** and merge '30 Days of' and 'JavaScript' to a single string, 'Pluralcode February Cohort Javascript Classes'
+24. Use **repeat()** method to print Pluralcode February Cohort Javascript Classes 2 times
 
 ### Exercise: Level 2
 
