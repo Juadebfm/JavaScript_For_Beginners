@@ -38,3 +38,5 @@ const PI = 3.14; // pi a geometrical constant
 const boilingPoint = 100; // temperature in oC, boiling point of water which is a constant
 const bodyTemp = 37; // oC average human body temperature, which is a constant
 console.log(age, gravity, mass, PI, boilingPoint, bodyTemp);
+
+

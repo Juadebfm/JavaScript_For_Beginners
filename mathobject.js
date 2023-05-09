@@ -32,3 +32,4 @@ console.log(Math.sin(0));
 console.log(Math.sin(60));
 console.log(Math.cos(0));
 console.log(Math.cos(60));
+
