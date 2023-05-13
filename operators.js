@@ -75,9 +75,9 @@ console.log(3 != 3);
 console.log(3 !== 3);
 console.log(0 == false);
 console.log(0 === false);
-console.log(0 == "");
-console.log(0 == " ");
-console.log(0 === "");
+console.log(0 == ""); //
+console.log(0 == " "); //
+console.log(0 === ""); //
 console.log(1 == true);
 console.log(1 === true);
 console.log(undefined == null);
@@ -145,6 +145,8 @@ number = -5;
 number > 0
   ? console.log(`${number} is a positive number`)
   : console.log(`${number} is a negative number`);
+
+console.log(`${number} is lakasdajoadjioasij`);
 /* ### Ternary Operators */
 
 // ### Operator Precedence
