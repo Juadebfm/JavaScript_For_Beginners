@@ -41,11 +41,29 @@ console.log(
 );
 /* ### Arithmetic operator */
 
+// As we've seen, JavaScript has seven primitive data types namely number, string, boolean, null, undefined, symbol, and BigInt, and two non-primitive data types, objects, and arrays. Primitive data types are simple and do not have methods, while non-primitive data types are dynamic and do not have a fixed size
+
+// The && (AND) operator gets true only if the two operands are true.
+const check = 4 > 3 && 10 > 5; // true && true -> true
+const check2 = 4 > 3 && 10 < 5; // true && false -> false
+const check3 = 4 < 3 && 10 < 5; // false && false -> false
+// The || (OR) operator gets true either of the operand is true.
+const check4 = 4 > 3 || 10 > 5; // true  || true -> true
+const check5 = 4 > 3 || 10 < 5; // true  || false -> true
+const check6 = 4 < 3 || 10 < 5; // false || false -> false
+// The ! (NOT) operator negates true to false and false to true.
+let check7 = 4 > 3; // true
+let check8 = !(4 > 3); //  false
+let isLightOn = true;
+let isLightOff = !isLightOn; // false
+let isMarried = !false; // true
+/* ### Logical operator */
+
 /* ### Comparison operator */
 // In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
-console.log(3 > 2); // true, because
-console.log(3 >= 2); // true, because
-console.log(3 < 2); // false,  because
+console.log(3 > 2);
+console.log(3 >= 2);
+console.log(3 < 2);
 console.log(2 < 3);
 console.log(2 <= 3);
 console.log(3 == 2);
@@ -80,21 +98,6 @@ console.log("python".length > "dragon".length);
 
 /* ### Comparison operator */
 
-/* ### Logical operator */
-// The && (AND) operator gets true only if the two operands are true.
-const check = 4 > 3 && 10 > 5; // true && true -> true
-const check2 = 4 > 3 && 10 < 5; // true && false -> false
-const check3 = 4 < 3 && 10 < 5; // false && false -> false
-// The || (OR) operator gets true either of the operand is true.
-const check4 = 4 > 3 || 10 > 5; // true  || true -> true
-const check5 = 4 > 3 || 10 < 5; // true  || false -> true
-const check6 = 4 < 3 || 10 < 5; // false || false -> false
-// The ! (NOT) operator negates true to false and false to true.
-let check7 = 4 > 3; // true
-let check8 = !(4 > 3); //  false
-let isLightOn = true;
-let isLightOff = !isLightOn; // false
-let isMarried = !false; // true
 /* ### Logical operator */
 
 /* ### Increment/Decrement operator */
@@ -177,12 +180,12 @@ const timeInSeconds = new Date().getTime();
 console.log(allSeconds == timeInSeconds); // true
 
 const moment = new Date();
-const year = moment.getFullYear(); // return year
-const month = moment.getMonth() + 1; // return month(0 - 11)
-const date = moment.getDate(); // return date (1 - 31)
-const hours = moment.getHours(); // return number (0 - 23)
-const minutes = moment.getMinutes(); // return number (0 -59)
+const year = moment.getFullYear();
+const month = moment.getMonth() + 1;
+const date = moment.getDate();
+const hours = moment.getHours();
+const minutes = moment.getMinutes();
 
-console.log(`${date}/${month}/${year} ${hours}:${minutes}`); // 4/1/2020 0:56
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`);
 
 /* ### Creating a time object */

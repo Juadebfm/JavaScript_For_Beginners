@@ -39,7 +39,6 @@
    8. !(4 > 3 && 10 < 12)
    9. !(4 > 3 && 10 > 12)
    10. !(4 === '4')
-   11. There is no 'on' in both dragon and python
 
 7. Use the Date object to do the following activities
    1. What is the year today?
@@ -60,7 +59,7 @@
    The area of the triangle is 100
    ```
 
-1. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
    ```sh
    Enter side a: 5
@@ -69,13 +68,13 @@
    The perimeter of the triangle is 12
    ```
 
-1. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
-1. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-1. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-1. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
-1. Compare the slope of above two questions.
-1. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-1. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
+7. Compare the slope of above two questions.
+8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
    ```sh
    Enter hours: 40
@@ -83,16 +82,16 @@
    Your weekly earning is 1120
    ```
 
-1. If the length of your name is greater than 7 say, your name is long else say your name is short.
-1. Compare your first name length and your family name length and you should get this output.
+10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+11. Compare your first name length and your family name length and you should get this output.
 
    ```js
-   let firstName = "Asabeneh";
-   let lastName = "Yetayeh";
+   let firstName = "Julius";
+   let lastName = "Adebowale";
    ```
 
    ```sh
-   Your first name, Asabeneh is longer than your family name, Yetayeh
+   Your first name, Julius is longer than your family name, Adebowale
    ```
 
 1. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge.
