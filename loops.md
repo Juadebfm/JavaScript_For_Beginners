@@ -14,7 +14,7 @@ for(initialization, condition, increment/decrement){
 ```
 
 ```js
-for (let i = 0; i <= 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 
@@ -35,7 +35,7 @@ i <= 5;
 i++;
 let i = 3;
 i <= 5;
-i++;
+i++; break
 let i = 4;
 i <= 5;
 i++;
@@ -68,7 +68,14 @@ for (let i = 0; i <= 5; i++) {
 ```
 
 ```js
-const countries = ["Finland", "Sweden", "Denmark", "Norway", "Iceland"];
+const countries = [
+  "Finland",
+  "Sweden",
+  "Denmark",
+  "Norway",
+  "Iceland",
+  "nigeria",
+];
 const newArr = [];
 for (let i = 0; i < countries.length; i++) {
   newArr.push(countries[i].toUpperCase());
@@ -115,10 +122,10 @@ console.log(newArr); // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ### while loop
 
 ```js
-let i = 0;
-while (i <= 5) {
+let i = 5;
+while (i > 0) {
   console.log(i);
-  i++;
+  i--;
 }
 
 // 0 1 2 3 4 5
@@ -171,8 +178,8 @@ for (const num of numbers) {
 console.log(sum); // 15
 
 const webTechs = [
-  "HTML",
-  "CSS",
+  "HTML", // 0
+  "CSS", // 1
   "JavaScript",
   "React",
   "Redux",
@@ -205,12 +212,11 @@ console.log(newArr); // ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 
 Break is used to interrupt a loop.
 
-```js
+```js //0 - 5
 for (let i = 0; i <= 5; i++) {
   if (i == 3) {
-    break;
+    break; //
   }
-  console.log(i);
 }
 
 // 0 1 2
@@ -223,11 +229,11 @@ The above code stops if 3 found in the iteration process.
 We use the keyword _continue_ to skip a certain iterations.
 
 ```js
-for (let i = 0; i <= 5; i++) {
-  if (i == 3) {
+for (let i = 0; i <= 10; i++) {
+  if (i == 4) {
     continue;
   }
-  console.log(i);
+  console.log(i); 0 1 2 3 5 6 7 8 9 10
 }
 
 // 0 1 2 4 5
