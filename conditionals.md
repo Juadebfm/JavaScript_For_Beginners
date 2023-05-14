@@ -20,6 +20,7 @@ In JavaScript and other programming languages the key word _if_ is to used check
 
 ```js
 // syntax
+
 if (condition) {
   //this part of code runs for truthy condition
 }
@@ -103,8 +104,8 @@ On our daily life, we make decisions on daily basis. We make decisions not by ch
 
 ```js
 // syntax
+
 if (condition) {
-  // code
 } else if (condition) {
   // code
 } else {
