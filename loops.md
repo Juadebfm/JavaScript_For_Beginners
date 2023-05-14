@@ -232,3 +232,45 @@ for (let i = 0; i <= 5; i++) {
 
 // 0 1 2 4 5
 ```
+
+#### simple array methods
+
+- push(): The push method is used to add one or more elements to the end of an array.
+  Example: Suppose you have an empty array to store a list of groceries, and you want to add some items to it. You can use the push method to add the items one by one to the end of the array:
+
+```js
+const groceryList = [];
+groceryList.push("milk");
+groceryList.push("bread");
+groceryList.push("eggs");
+console.log(groceryList); // Output: ['milk', 'bread', 'eggs']
+```
+
+- pop(): The pop method is used to remove the last element from an array.
+  Example: Suppose you have an array of numbers, and you want to remove the last element from it. You can use the pop method to remove the last element:
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+const lastNumber = numbers.pop();
+console.log(numbers); // Output: [1, 2, 3, 4]
+console.log(lastNumber); // Output: 5
+```
+
+- shift(): The shift method is used to remove the first element from an array.
+  Example: Suppose you have an array of strings representing a list of students in a class, and you want to remove the first student from the list. You can use the shift method to remove the first element:
+
+```js
+const students = ["Alice", "Bob", "Charlie", "David"];
+const firstStudent = students.shift();
+console.log(students); // Output: ['Bob', 'Charlie', 'David']
+console.log(firstStudent); // Output: 'Alice'
+```
+
+- unshift(): The unshift method is used to add one or more elements to the beginning of an array.
+  Example: Suppose you have an array of numbers, and you want to add a new number to the beginning of the array. You can use the unshift method to add the number:
+
+```js
+const numbers = [2, 3, 4, 5];
+numbers.unshift(1);
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+```
