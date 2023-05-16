@@ -4,3 +4,7 @@ let string = "PluralCode";
 console.log(string.concat(" Javascript", " February", " Cohort", " Class"));
 let country = "Nig";
 console.log(country.concat("eria"));
+
+
+let string2 = "D"
+console.log(string2.concat("olapo"))
