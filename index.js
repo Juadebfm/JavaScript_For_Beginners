@@ -18,7 +18,8 @@ let isMarried = false; // variable isMarried holds a boolean value
 
 /*DIFFERENCE BETWEEN CONST, LET & VAR*/
 // "const" is used to create a variable that cannot be reassigned. For example:
-const PI = 3.14;
+let PI = 3.14;
+console.log(PI);
 const waterBoilingPoint = 100;
 const earthGravity = 9.81;
 // "let" is used to create a variable that can be reassigned. For example:
@@ -83,3 +84,5 @@ console.log(
   y
 );
 /*CONSOLE & ALERT */
+
+
