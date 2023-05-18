@@ -74,7 +74,7 @@
 6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
 7. Compare the slope of above two questions.
 8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+9. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
    ```sh
    Enter hours: 40
