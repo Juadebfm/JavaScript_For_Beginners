@@ -75,8 +75,8 @@ Function can also return values, if a function does not return values the value 
 
 ```js
 function printFullName() {
-  let firstName = "Asabeneh";
-  let lastName = "Yetayeh";
+  let firstName = "Julius";
+  let lastName = "Adebowale";
   let space = " ";
   let fullName = firstName + space + lastName;
   return fullName;
@@ -98,6 +98,18 @@ console.log(addTwoNumbers());
 ### Function with a parameter
 
 In a function we can pass different data types(number, string, boolean, object, function) as a parameter.
+
+The parameter in a function serves as a way to pass value from the calling code to the function. While it is true that you can directly retrieve the value from the user input / prompt within the function, using a parameter provides several benefits:
+
+Reusability: By accepting a parameter, the function becomes more flexible and reusable. It can be called from different parts of your code, passing different values each time.
+
+Encapsulation: Using a parameter allows you to encapsulate the logic related to calculating a specific tasks within the function. It keeps the function self-contained and focused on its specific task. This can improve code organization and maintainability.
+
+Separation of Concerns: By separating the input retrieval (from the user) and the calculation (in the function), you can have cleaner code structure. The input retrieval can be handled in the event handler or another function, while the action function focuses solely on calculation.
+
+Testing and Debugging: With a parameter, it becomes easier to test the function using different radius values. You can pass specific values during testing to ensure the function behaves as expected. Additionally, if you encounter any issues or bugs, having a parameter makes it easier to isolate and debug the problematic areas.
+
+While it is possible to directly retrieve the radius value within the function, using a parameter provides advantages in terms of flexibility, code organization, and testing. It allows for better separation of concerns and facilitates code reuse, making your code more maintainable in the long run.
 
 ```js
 // function with one parameter
@@ -145,7 +157,7 @@ console.log(sumTwoNumbers(10, 20));
 function printFullName(firstName, lastName) {
   return `${firstName} ${lastName}`;
 }
-console.log(printFullName("Asabeneh", "Yetayeh"));
+console.log(printFullName("Julius", "Adebowale"));
 ```
 
 ### Function with many parameters
@@ -250,8 +262,33 @@ console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 ```
 
 ### Anonymous Function
+An anonymous function is a function that is defined without a name. Instead of giving the function a specific identifier, it is created on the fly as an expression.
 
-Anonymous function or without name
+Here's an example of an anonymous function in JavaScript:
+
+```js
+let greet = function() {
+  console.log("Hello!");
+};
+```
+
+In this example, we define an anonymous function and assign it to the variable greet. The function does not have a name, but it can still be executed using the variable name followed by parentheses, just like a named function.
+
+Anonymous functions are commonly used in situations where a function is needed for a specific purpose but does not need to be referred to by name elsewhere in the code. They can be used as arguments in higher-order functions, such as forEach, map, or setTimeout, or as event handlers for DOM events.
+
+Here's an example of using an anonymous function as an event handler:
+
+```js
+let button = document.querySelector("button");
+
+button.addEventListener("click", function() {
+  console.log("Button clicked!");
+});
+```
+
+In this case, we define an anonymous function as the event handler for the "click" event of a button. When the button is clicked, the anonymous function will be executed.
+
+Anonymous functions provide a way to define functionality inline without the need to explicitly name the function. They are a useful tool for creating concise and self-contained blocks of code in various programming scenarios.
 
 ```js
 const anonymousFun = function () {
@@ -324,10 +361,10 @@ const changeToUpperCase = (arr) => {
   return newArr;
 };
 
-const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
+const countries = ["NIGERIA", "Sweden", "Norway", "Denmark", "Iceland"];
 console.log(changeToUpperCase(countries));
 
-// ["FINLAND", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
+// ["NIGERIA", "SWEDEN", "NORWAY", "DENMARK", "ICELAND"]
 ```
 
 ```js
@@ -335,7 +372,7 @@ const printFullName = (firstName, lastName) => {
   return `${firstName} ${lastName}`;
 };
 
-console.log(printFullName("Asabeneh", "Yetayeh"));
+console.log(printFullName("Julius", "Adebowale"));
 ```
 
 The above function has only the return statement, therefore, we can explicitly return it as follows.
