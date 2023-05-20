@@ -123,6 +123,17 @@ function areaOfCircle(r) {
   return area;
 }
 
+function addTwoNum(a, b) {
+  let result = parseFloat(a) + parseFloat(b);
+  if (parseFloat(a) + parseFloat(b) > 10) {
+    return `${result} is greater than a decade`;
+  } else {
+    return `${result} is less than a decade`;
+  }
+}
+
+console.log(addTwoNum(10, 5));
+
 console.log(areaOfCircle(10)); // should be called with one argument
 
 function square(number) {
@@ -262,13 +273,18 @@ console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))  // 173
 ```
 
 ### Anonymous Function
+
 An anonymous function is a function that is defined without a name. Instead of giving the function a specific identifier, it is created on the fly as an expression.
 
 Here's an example of an anonymous function in JavaScript:
 
 ```js
-let greet = function() {
+let greet = function () {
   console.log("Hello!");
+};
+
+let greet = () => {
+  console.log("Hello");
 };
 ```
 
@@ -281,7 +297,7 @@ Here's an example of using an anonymous function as an event handler:
 ```js
 let button = document.querySelector("button");
 
-button.addEventListener("click", function() {
+button.addEventListener("click", function () {
   console.log("Button clicked!");
 });
 ```
