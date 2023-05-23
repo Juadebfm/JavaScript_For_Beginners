@@ -193,3 +193,87 @@ const countries = [
   "Zambia",
   "Zimbabwe",
 ];
+
+// reverse country
+let capCountries = [];
+for (let i = countries.length - 1; i >= 0; i--) {
+  let country = countries[i].toUpperCase();
+
+  capCountries.push(country);
+}
+
+console.log(capCountries)
+
+// 1
+const countriesCopy = [...countries];
+
+console.log(countriesCopy);
+
+const sortedCountries = countriesCopy.sort();
+
+const countriesPart = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+console.log(countriesPart.sort());
+console.log(webTechs.sort());
+
+//countries with wordʻs "land"
+const countriesWithLand = [];
+
+for (let i = 0; i < countries.length; i++) {
+  const country = countries[i];
+  if (country.toLowerCase().includes("land")) {
+    countriesWithLand.push(country);
+  }
+}
+
+console.log(countriesWithLand);
+
+// countries with the largest number
+let countryWithHighestChar = [];
+for (let i = 0; i < countries.length; i++) {
+  const country = countries[i];
+  if (country.length > countryWithHighestChar.length) {
+    countryWithHighestChar = country;
+  }
+}
+
+console.log(countryWithHighestChar);
+
+// countries with t5 characters
+let countryWith5Char = [];
+for (let i = 0; i < countries.length; i++) {
+  const country = countries[i];
+  if (country.length === 4) {
+    countryWith5Char.push(country);
+  }
+}
+
+console.log(countryWith5Char);
+
+// countries with two or more words
+const countriesWithMultipleWords = countries.filter(
+  (country) => country.split(" ").length >= 2
+);
+console.log(countriesWithMultipleWords);
