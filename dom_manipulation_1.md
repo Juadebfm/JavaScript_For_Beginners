@@ -1,6 +1,6 @@
 # Document Object Model (DOM) - Day 1
 
-HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript. Check the examples below. Selecting HTML element using JavaScript is similar to selecting using CSS. To select an HTML element, we use tag name, id, class name or other attributes.
+HTML document is structured as a JavaScript Object. Every HTML element has a different properties which can help to manipulate it. It is possible to get, create, append or remove HTML elements using JavaScript. Check the examples below. Selecting HTML element using JavaScript is similar to selecting them using CSS. To select an HTML element, we use tag name, id, class name or other attributes.
 
 ## Getting Element
 
@@ -23,7 +23,7 @@ We can access already created element or elements using JavaScript. To access or
 
 ### Getting elements by tag name
 
-**_getElementsByTagName()_**:takes a tag name as a string parameter and this method returns an HTMLCollection object. An HTMLCollection is an array like object of HTML elements. The length property provides the size of the collection. Whenever we use this method we access the individual elements using index or after loop through each individual items. An HTMLCollection does not support all array methods therefore we should use regular for loop instead of forEach.
+**_getElementsByTagName()_**:takes a tag name as a string parameter and this method returns an HTMLCollection object. An HTMLCollection is an array like object of HTML elements. The length property provides the size of the collection. Whenever we use this method we access the individual elements using index. An HTMLCollection does not support all array methods therefore we should use regular for loop instead of forEach.
 
 ```js
 // syntax
@@ -167,15 +167,6 @@ titles[3].textContent = "Fourth Title";
 
 Most people get confused between _textContent_ and _innerHTML_. _textContent_ is meant to add text to an HTML element, however innerHTML can add a text or HTML element or elements as a child.
 
-##### Text Content
-
-We assign _textContent_ HTML object property to a text
-
-```js
-const titles = document.querySelectorAll("h1");
-titles[3].textContent = "Fourth Title";
-```
-
 ##### Inner HTML
 
 We use innerHTML property when we like to replace or a completely new children content to a parent element.
@@ -193,20 +184,18 @@ It value we assign is going to be a string of HTML elements.
       <h2>Pluralcode february Cohort Challenge</h2>
       <ul></ul>
     </div>
-    <script>
-      const lists = `
-    <li>30DaysOfPython Challenge Done</li>
-            <li>Pluralcode february Cohort Challenge Ongoing</li>
-            <li>30DaysOfReact Challenge Coming</li>
-            <li>30DaysOfFullStack Challenge Coming</li>
-            <li>30DaysOfDataAnalysis Challenge Coming</li>
-            <li>30DaysOfReactNative Challenge Coming</li>
-            <li>30DaysOfMachineLearning Challenge Coming</li>`;
-      const ul = document.querySelector("ul");
-      ul.innerHTML = lists;
-    </script>
   </body>
 </html>
+```
+
+```js
+const lists = `
+                **<li>Welcome to pluralcode february 2023 class</li>
+                <li>Mentor : Juadeb Gabriel</li>
+                <li>Students is plenty</li>**
+`;
+const ul = document.querySelector("ul");
+ul.innerHTML = lists;
 ```
 
 The innerHTML property can allow us also to remove all the children of a parent element. Instead of using removeChild() I would recommend the following method.
