@@ -1,9 +1,9 @@
-# DOM(Document Object Model)-
+# DOM(Document Object Model) 2-
 
 ## Event Listeners
 
 Common HTML events:onclick, onchange, onmouseover, onmouseout, onkeydown, onkeyup, onload.
-We can add event listener method to any DOM object. We use **_addEventListener()_** method to listen different event types on HTML elements. The _addEventListener()_ method takes two arguments, an event listener and a callback function.
+We can add event listener method to any DOM object. We use **_addEventListener()_** method to listen to different event types on HTML elements. The _addEventListener()_ method takes two arguments, an event listener and a callback function.
 
 ```js
 selectedElement.addEventListener("eventlistner", function (e) {
@@ -173,19 +173,6 @@ We usually fill forms and forms accept data. Form fields are created using input
     <input type="text" id="mass" placeholder="Mass in Kilogram" />
     <input type="text" id="height" placeholder="Height in meters" />
     <button>Calculate BMI</button>
-
-    <script>
-      const mass = document.querySelector("#mass");
-      const height = document.querySelector("#height");
-      const button = document.querySelector("button");
-
-      let bmi;
-      button.addEventListener("click", () => {
-        bmi = mass.value / height.value ** 2;
-        alert(`your bmi is ${bmi.toFixed(2)}`);
-        console.log(bmi);
-      });
-    </script>
   </body>
 </html>
 ```
@@ -216,39 +203,6 @@ In the above example, we managed to get input values from two input fields by cl
       });
     </script>
   </body>
-</html>
-```
-
-#### blur event
-
-In contrast to _input_ or _change_, the _blur_ event occur when the input field is not on focus.
-
-```js
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Document Object Model:30 Days Of JavaScript</title>
-</head>
-
-<body>
-    <h1>Giving feedback using blur event</h1>
-
-    <input type="text" id="mass" placeholder="say something" />
-    <p></p>
-
-    <script>
-        const input = document.querySelector('input')
-        const p = document.querySelector('p')
-
-        input.addEventListener('blur', (e) => {
-            p.textContent = 'Field is required'
-            p.style.color = 'red'
-
-        })
-    </script>
-</body>
-
 </html>
 ```
 

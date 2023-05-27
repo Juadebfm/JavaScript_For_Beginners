@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 3rem 6rem;
+}
+@media (max-width: 700px) {
+  body {
+    padding: 3rem 1.5rem;
+  }
+}
+body h1 {
+  color: #105610;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+@media (max-width: 700px) {
+  body h1 {
+    margin-bottom: 2rem;
+  }
+}
+body h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+body p {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+@media (max-width: 700px) {
+  body p {
+    margin-bottom: 10px;
+  }
+}
+body div #validationText {
+  padding: 0;
+  margin: 0;
+}
+body div form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  body div form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  body div form {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+body div form input {
+  flex-basis: 70%;
+  padding: 15px 10px;
+  outline: none;
+  border: 1px solid green;
+  font-size: 18px;
+}
+body div form button {
+  flex-basis: 30%;
+  padding: 15px 10px;
+  background-color: green;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+body div form button:hover {
+  filter: drop-shadow(0 0 0.15rem #808080);
+}
+body #numbersContainer {
+  margin: auto;
+  margin-top: 25px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+}
+@media (max-width: 700px) {
+  body #numbersContainer {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  body #numbersContainer {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+body #numbersContainer .span_fix {
+  padding: 15px;
+}/*# sourceMappingURL=test.css.map */
