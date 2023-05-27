@@ -5,7 +5,8 @@ const container = document.getElementById("container");
 const newDIv = document.createElement("div");
 const newSpan = document.createElement("span");
 
-heading.classList.add("bold_text");
+// heading.classList.add("bold_text");
+heading.style.fontWeight = "900";
 heading.classList.add("large_text");
 
 para.classList.add("font_style");
