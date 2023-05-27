@@ -35,15 +35,15 @@ button.addEventListener("click", (event) => {
   }
 });
 
-// Clear validation text when user starts typing
-input.addEventListener("input", () => {
-  validateText.textContent = "";
-});
-
 // Retrieve number spans from localStorage on page load
 window.addEventListener("load", () => {
   const storedSpans = localStorage.getItem("numberSpans");
   if (storedSpans) {
     numberContainer.innerHTML = storedSpans;
   }
+});
+
+// Clear validation text when user starts typing
+input.addEventListener("input", () => {
+  validateText.textContent = "";
 });
