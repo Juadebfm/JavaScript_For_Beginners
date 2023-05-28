@@ -3,4 +3,66 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  padding: 1.5rem 3.5rem;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 700px) {
+  body {
+    padding: 0.7rem 1.5rem;
+  }
+}
+body nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body nav span {
+  font-size: 25px;
+  font-weight: 800;
+  color: #00f;
+}
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 3rem;
+}
+@media (max-width: 700px) {
+  body nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    padding: 2rem;
+    background-color: #00f;
+    color: #fff;
+    width: 70%;
+  }
+}
+body nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+body nav .nav__btns button {
+  padding: 8px;
+  width: 90px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  background: #00f;
+  transition: all 0.3s ease-in-out;
+}
+body nav .nav__btns button:hover {
+  filter: drop-shadow(0 0 0.15rem #808080);
+}
+
+.show {
+  right: 0;
 }/*# sourceMappingURL=navbar.css.map */
