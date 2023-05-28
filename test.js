@@ -1,5 +1,4 @@
 // Call the elements from HTML
-
 const input = document.getElementById("inputNumber");
 const validateText = document.getElementById("validationText");
 const button = document.getElementById("submitNumber");
@@ -7,12 +6,15 @@ const numberContainer = document.getElementById("numbersContainer");
 
 // Validate user input on button click
 button.addEventListener("click", (event) => {
+  //stopping page refresh
   event.preventDefault();
+  // take user input and change it a number
   const inputValue = parseInt(input.value);
-  if (isNaN(inputValue)) {
+
+  if (input.value === "") {
+    validateText.textContent = "Oga enter a value";
+  } else if (isNaN(inputValue)) {
     validateText.textContent = "Oga enter a number not strings";
-  } else if (inputValue <= 0) {
-    validateText.textContent = "Oga enter a valid number";
   } else {
     validateText.textContent = "";
     numberContainer.innerHTML = "";
@@ -46,4 +48,9 @@ window.addEventListener("load", () => {
 // Clear validation text when user starts typing
 input.addEventListener("input", () => {
   validateText.textContent = "";
+});
+
+// Clear input field on page refresh
+window.addEventListener("beforeunload", () => {
+  input.value = "";
 });
