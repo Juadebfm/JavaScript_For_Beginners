@@ -1,4 +1,4 @@
-### Exercise: Level 1
+# Exercise: Level 1
 
 ```js
 const countries = [
@@ -50,7 +50,7 @@ const webTechs = [
 22. Remove the last IT company from the array
 23. Remove all IT companies
 
-### Exercise: Level 2
+## Exercise: Level 2
 
 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
 1. First remove all the punctuations and change the string to array and count the number of words in the array
@@ -96,19 +96,18 @@ const webTechs = [
 
 ### Exercise: Level 3
 
-1.  The following is an array of 10 students ages:
+1. The following is an array of 10 students ages:
 
-        ```js
-        const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-        ```
+```js
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+```
 
-        - Sort the array and find the min and max age
-        - Find the median age(one middle item or two middle items divided by two)
-        - Find the average age(all items divided by number of items)
-        - Find the range of the ages(max minus min)
-        - Compare the value of (min - average) and (max - average), use _abs()_ method
+- Sort the array and find the min and max age
+- Find the median age(one middle item or two middle items divided by two)
+- Find the average age(all items divided by number of items)
+- Find the range of the ages(max minus min)
+- Compare the value of (min - average) and (max - average), use _abs()_ method
 
-    1.Slice the first ten countries from the [countries array](./countrydata.js)
-
-2.  Find the middle country(ies) in the [countries array](./countrydata.js)
-3.  Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+1. Slice the first ten countries from the [countries array](./countrydata.js)
+2. Find the middle country(ies) in the [countries array](./countrydata.js)
+3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.

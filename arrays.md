@@ -418,8 +418,8 @@ toString:Converts array to string
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers.toString()); // 1,2,3,4,5
 
-const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
-console.log(names.toString()); // Asabeneh,Mathias,Elias,Brook
+const names = ["Julius", "Mathias", "Elias", "Brook"];
+console.log(names.toString()); // Julius,Mathias,Elias,Brook
 ```
 
 #### Joining array elements
@@ -430,13 +430,13 @@ join: It is used to join the elements of the array, the argument we passed in th
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers.join()); // 1,2,3,4,5
 
-const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
+const names = ["Julius", "Mathias", "Elias", "Brook"];
 
-console.log(names.join()); // Asabeneh,Mathias,Elias,Brook
-console.log(names.join("")); //AsabenehMathiasEliasBrook
-console.log(names.join(" ")); //Asabeneh Mathias Elias Brook
-console.log(names.join(", ")); //Asabeneh, Mathias, Elias, Brook
-console.log(names.join(" # ")); //Asabeneh # Mathias # Elias # Brook
+console.log(names.join()); // Julius,Mathias,Elias,Brook
+console.log(names.join("")); //JuliusMathiasEliasBrook
+console.log(names.join(" ")); //Julius Mathias Elias Brook
+console.log(names.join(", ")); //Julius, Mathias, Elias, Brook
+console.log(names.join(" # ")); //Julius # Mathias # Elias # Brook
 
 const webTechs = [
   "HTML",
@@ -605,4 +605,3 @@ console.log(fullStack[0]); // ["HTML", "CSS", "JS", "React", "Redux"]
 console.log(fullStack[1]); // ["Node", "Express", "MongoDB"]
 ```
 
-🌕 You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
