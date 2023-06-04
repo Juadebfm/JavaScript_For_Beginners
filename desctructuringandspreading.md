@@ -6,6 +6,7 @@ Destructuring is a way to unpack arrays, and objects and assigning to a distinct
 
 ```js
 const numbers = [1, 2, 3];
+let numberOne = numbers[0];
 let [numOne, numTwo, numThree] = numbers;
 
 console.log(numOne, numTwo, numThree);

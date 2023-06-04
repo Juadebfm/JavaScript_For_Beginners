@@ -87,4 +87,4 @@ console.log(fame, lame);
 
 // displayFullname(person);
 
-let displayFullname = ({ firstName, lastName }) => `${firstName} ${lastName}`;
+let displayFullname = ({ props: Props }) => `${firstName} ${lastName}`;
