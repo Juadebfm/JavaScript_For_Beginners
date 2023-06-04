@@ -1,7 +1,6 @@
 {
-    "firstName": "Julius",
-    "lastName": "Adebowale",
-    "country": "Nigeria",
-    "city": "Lagos",
-    "age": 250
+  "firstName": "Julius",
+  "lastName": "Adebowale",
+  "age": 250,
+  "email": "asab@asb.com"
 }
