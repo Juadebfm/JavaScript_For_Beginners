@@ -177,7 +177,7 @@ const usersObj = JSON.parse(usersText, undefined, 4);
 console.log(usersObj);
 ```
 
-### Using a reviver function with JSON.parse()
+### Using a parse function with JSON.parse()
 
 To use the reviver function as a formatter, we put the keys we want to format first name and last name value. Let us say, we are interested to format the firstName and lastName of the JSON data .
 

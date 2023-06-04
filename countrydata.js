@@ -2011,3 +2011,16 @@ const countries = [
     currency: "Botswana pula",
   },
 ];
+
+// convert an object to json using the stringify method
+let newObj = JSON.stringify(countries, undefined, 4);
+console.log(newObj);
+
+// convert a json file back to an object using the parse method while making the values except flag uppercase.
+const newJson = JSON.parse(newObj, (key, value) => {
+  let newValue =
+    typeof value == "string" && key != "flag" ? value.toUpperCase() : value;
+  return newValue;
+});
+
+console.log(newJson);
