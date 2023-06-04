@@ -50,6 +50,12 @@ Coding conventions includes
 
 In this repo we follow the regular JavaScript convention but I added also my preference of writing.
 
+```js
+const add = (a,b) => return a + b
+
+
+```
+
 - We used camelCase for variables and functions.
 - All variable names start with a letter.
 - We chose to use _const_ for constants, arrays, objects and functions. In stead of single quote, we chose to use double quote or backtick. Single quote is becoming trendy though.
@@ -59,7 +65,7 @@ In this repo we follow the regular JavaScript convention but I added also my pre
 - Explicit return instead of implicit return if the function is one liner
 - No trailing comma in the last value of an object
 - We prefer this +=, -=, \*= /=, \*\*= instead of the longer version
-- When we use console.log() it is good to print with a tag string to identify from where the console is coming
+- When we use console.log() it is good to print with a stack string to identify from where the console is coming
 
 #### Variables
 
@@ -306,7 +312,7 @@ isRaining
 
 #### Classes
 
-We declare class with CamelCase which starts with capital letter.
+We declare class with PascalCase which starts with capital letter.
 
 ```js
 // syntax
@@ -327,3 +333,9 @@ class Person {
 ```
 
 Whatever style guide you follow be consistent. Follow some programming paradigms and design patterns. Remember, if you do not write you code in certain order or fashion it will be hard to read your code. So, do a favor for yourself or for someone who is going to read your code by writing readable code.
+
+```js
+let name = "evans";
+
+console.log(`His name is ${name}`);
+```
