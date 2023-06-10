@@ -1,6 +1,6 @@
 # FETCH API
 
-Every single web or mobile app in web development requires that you get data from somewhere and get data from somewhere. This back and forth is actually what makes the web so powerful and one of the way we do this natively in JS is using the all powerful _fetch API_
+Every single web or mobile app in web development requires that you get data from somewhere and send data to a place. This back and forth is actually what makes the web so powerful and one of the way we do this natively in JS is using the all powerful _fetch API_
 
 _fetch()_ provides an easy way to make HTTP requests to retrieve resources from a server. It returns a Promise that resolves to the response from the server. It is commonly used to fetch JSON data, HTML content, or other types of resources.
 
