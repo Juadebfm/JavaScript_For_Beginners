@@ -12,7 +12,7 @@ const shawarma = "shawarma"; //memory allocation, writing the actual string to t
 console.log(shawarma);
 ```
 
-This is an example of a _Synchronous_ code. It goes from the variable declaration to the console.log point of the code "synchronously". NB: it actually takes a bit og time for each line of code to be executed before they go to the subsequent line. That means, at the point when JS is assigning the value "pizza" to the variable _pizza_, the _console.log(pizza);_ is paused until the code above it is worked on and done.
+This is an example of a _Synchronous_ code. It goes from the variable declaration to the console.log point of the code "synchronously". NB: it actually takes a bit og time for each line of code to be executed before they go to the subsequent line. That means, at the point when JS is assigning the value "shawarma" to the variable _shawarma_, the _console.log(shawarma);_ is paused until the code above it is worked on and done.
 
 ```js
 function getShawarma() {
@@ -24,6 +24,8 @@ console.log(`${shawarma}`);
 ```
 
 - SYNCHRONOUS MEANS THINGS HAPPEN ACCORDING TO THE ORDER IN WHICH IT WAS SETUP
+
+## Asynchronous Programming
 
 ```js
 let shawarma;
@@ -37,8 +39,6 @@ function orderShawarma() {
 orderShawarma();
 console.log(`Eat ${shawarma}`);
 ```
-
-## Asynchronous Programming
 
 This simply relates to the suituation where a part of your code relies, depends or waits for another part of your code or event from another part of your code e.g waiting for a backend call or user click event.
 
@@ -64,7 +64,7 @@ console.log(`Eat ${shawarma}`);
 So we need to identify part of our codes that waits/depends on another part and the part of our code that doesn't need to wait.
 
 - We need to wait and be notified when the wait is over so that the line that is dependent can run properly
-- We need a way to kick off the function that we need to wait for and then forget it so we can "move one with our lifes", we can come back to it when the wait is over.
+- We need a way to kick off the function that we need to wait for and then forget it so we can "move on with our lifes", we can come back to it when the wait is over.
 
 This is where _Asynchronous_ programming comes in and the _setTimeOut_ function is a very basal/basic example of that.
 
@@ -134,6 +134,7 @@ For javaScript promises, there are 2 things involved
 ### The Maker
 
 This is the function that creates a promise objects and returns it, the maker is always an asynchronous function
+
 
 ```js
 function getWeather() {
