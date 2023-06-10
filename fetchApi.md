@@ -113,3 +113,60 @@ Success: {
 ```
 
 Note that the code did not get to the catch block because for the fetch API, making a success trip from and to an API is considered a success. That is why validating on the frontend is very essential to make sure weʻre sending the correct data especially with forms
+
+```JS
+const spotifyUrl = "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9";
+
+const request = new Request(spotifyUrl, {
+  headers: {
+    Authorization: "Bearer <KEY>",
+  },
+});
+
+fetch(request)
+  .then((response) => console.log(response))
+//taking this to the console dev tools shows the response object
+```
+
+So best way to handle error is to use the _try catch_ error handling method we learnt in the last class, use the _then - catch_ block or use _conditional_ statements or a combination of 1 or 2.
+
+```js
+const spotifyUrl = "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9";
+
+const request = new Request(spotifyUrl, {
+  headers: {
+    Authorization: "Bearer <KEY>",
+  },
+});
+
+async function getData() {
+  try {
+    const response = await fetch(request);
+    const data = await response.json();
+    if (response.status === 200) {
+      console.log("Success", data);
+    } else {
+      console.log("Server Error", data.error.message);
+    }
+  } catch (error) {
+    console.log("Error", error);
+  }
+}
+
+getData();
+```
+
+### WHY USE FETCH
+
+So finally, why use fetch instead of XHR (XmlHttpRequest), or Axios or JQuery Ajax?
+
+- Native support and documentation
+- No installation required
+- Modern features like _then_ block.
+- Modern syntax _Promise_ unlike XHR which uses the _callback_, remember `callback hell` ?
+
+#### FREE APIS FOR PRACTICE
+
+[public APIs](https://free-apis.github.io/)
+[public APIs 2](https://publicapis.dev/)
+[public APIs 3](https://rapidapi.com/collection/list-of-free-apis)
