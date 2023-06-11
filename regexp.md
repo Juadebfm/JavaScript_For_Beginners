@@ -187,7 +187,7 @@ I am teacher and  I love teaching.There is nothing as more rewarding as educatin
   - \d mean: match where the string contains digits (numbers from 0-9)
   - \D mean: match where the string does not contain digits
 - . : any character except new line character(\n)
-- ^: starts with
+- ^ : starts with
   - r'^substring' eg r'^love', a sentence which starts with a word love
   - r'[^abc] mean not a, not b, not c.
 - $: ends with

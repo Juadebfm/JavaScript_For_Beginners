@@ -80,7 +80,7 @@ Explanation: This regular expression checks if the password contains at least on
 ## USE IN JS CODE
 
 ```js
-const validatePassword = (password) => {
+**const validatePassword = (password) => {
   const minLengthRegex = /^.{8,}$/;
   const uppercaseRegex = /(?=.*[A-Z])/;
   const numericRegex = /(?=.*\d)/;
@@ -103,5 +103,5 @@ const validatePassword = (password) => {
 // Example usage:
 const password = prompt("Enter password"); // Sample password to validate
 const validationMessage = validatePassword(password);
-console.log(validationMessage);
+console.log(validationMessage);**
 ```

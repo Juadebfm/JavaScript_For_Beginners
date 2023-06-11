@@ -27,7 +27,7 @@ window.onload = function () {
   function validateEmail() {
     var referenceEmail = emailInput.value;
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    var isValid = emailRegex.test(referenceEmail);
+    var isValid = emailRegex.test(referenceEmail); //true / false
     var errorDiv = document.getElementById("emailError");
   
     if (isValid) {
