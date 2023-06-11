@@ -390,3 +390,9 @@ let result = pattern.test(name);
 
 console.log(result); // true
 ```
+
+### EXTRA RESOURCES ON REGEXP
+
+[REGEXP FOR BEGINNERS](https://youtu.be/3l08sBKOSCs)
+[REG EXP USE CASES](https://youtu.be/LAa-mGCx484)
+[REG EXP PRACTICE](https://regexr.com/)

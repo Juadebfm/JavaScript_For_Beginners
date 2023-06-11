@@ -1,0 +1,107 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .main-header {
+    background: #f4f4f6 !important;
+    padding: 6rem;
+  }
+  @media (max-width: 772px) {
+    .main-header {
+      padding: 4rem;
+    }
+  }
+  
+  .section-form {
+    background: #fff;
+    margin: auto;
+  }
+  
+  .section-form form {
+    width: 46%;
+  }
+  
+  @media (max-width: 772px) {
+    .section-form {
+      padding: 15px;
+    }
+    .section-form form {
+      width: 100%;
+    }
+  }
+  
+  .form-div {
+    width: 100%;
+  }
+  
+  .plH1 {
+    color: #222057;
+  }
+  
+  .plH2 {
+    color: #222057;
+  }
+  
+  .caption-span {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select {
+    padding: 10px !important;
+  }
+  
+  input::placeholder {
+    font-size: 14px;
+    color: #bbbbbbeb !important;
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary-pl {
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #f59e0b;
+    outline: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .btn-warning-pl {
+    background-color: orange;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .check-writeup {
+    color: #9ca3af;
+  }
+  
+  .student_policy {
+    color: #f59e0b;
+  }
+  
+  .student_policy {
+    color: #f59e0b;
+    text-decoration: none;
+  }
+  
+  .student_policy:hover {
+    text-decoration: underline;
+  }
+  
+  .fw-medium {
+    color: #222057 !important;
+  }
+  
+  .is-invalid {
+    border-color: red;
+  }
