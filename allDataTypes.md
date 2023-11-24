@@ -18,7 +18,7 @@ Primitive data types in JavaScript include:
 
 Non-primitive data types in JavaScript includes:
 
-1. Objects
+1. Objects 
 2. Arrays
 
 Now, let us see what exactly primitive and non-primitive data types mean.
